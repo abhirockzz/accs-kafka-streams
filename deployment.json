@@ -1,0 +1,18 @@
+	{
+	  "memory": "2G",
+	  "instances": 1,
+	  "services": [
+		{
+		  "name": "tweets",
+		  "type": "OEHCS"
+		},
+		{
+      "name": "tweet-analysis-store",
+      "type": "caching"
+    }
+	  ],
+	  "environment": {
+	   "TRACKED_TERMS":"java,kafka,cloud,oracle,paas",
+	   "STREAMS_APP_ID":"tweet-stream-app"
+	  }
+	}
